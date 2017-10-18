@@ -1,33 +1,99 @@
 Code Book
 
-This code book will describe the data used in this project, as well as the processing required to create the resulting tidy data set.
+This code book summarizes the resulting data fields in tidydata.txt.
 
-Overview
+Identifiers
 
-30 volunteers performed 6 different activities while wearing a smartphone. The smartphone captured various data about their movements.
+subject - The ID of the test subject
+activity - The type of activity performed when the corresponding measurements were taken
+Measurements
 
-Explanation of each file
+tBodyAccMeanX
+tBodyAccMeanY
+tBodyAccMeanZ
+tBodyAccStdX
+tBodyAccStdY
+tBodyAccStdZ
+tGravityAccMeanX
+tGravityAccMeanY
+tGravityAccMeanZ
+tGravityAccStdX
+tGravityAccStdY
+tGravityAccStdZ
+tBodyAccJerkMeanX
+tBodyAccJerkMeanY
+tBodyAccJerkMeanZ
+tBodyAccJerkStdX
+tBodyAccJerkStdY
+tBodyAccJerkStdZ
+tBodyGyroMeanX
+tBodyGyroMeanY
+tBodyGyroMeanZ
+tBodyGyroStdX
+tBodyGyroStdY
+tBodyGyroStdZ
+tBodyGyroJerkMeanX
+tBodyGyroJerkMeanY
+tBodyGyroJerkMeanZ
+tBodyGyroJerkStdX
+tBodyGyroJerkStdY
+tBodyGyroJerkStdZ
+tBodyAccMagMean
+tBodyAccMagStd
+tGravityAccMagMean
+tGravityAccMagStd
+tBodyAccJerkMagMean
+tBodyAccJerkMagStd
+tBodyGyroMagMean
+tBodyGyroMagStd
+tBodyGyroJerkMagMean
+tBodyGyroJerkMagStd
+fBodyAccMeanX
+fBodyAccMeanY
+fBodyAccMeanZ
+fBodyAccStdX
+fBodyAccStdY
+fBodyAccStdZ
+fBodyAccMeanFreqX
+fBodyAccMeanFreqY
+fBodyAccMeanFreqZ
+fBodyAccJerkMeanX
+fBodyAccJerkMeanY
+fBodyAccJerkMeanZ
+fBodyAccJerkStdX
+fBodyAccJerkStdY
+fBodyAccJerkStdZ
+fBodyAccJerkMeanFreqX
+fBodyAccJerkMeanFreqY
+fBodyAccJerkMeanFreqZ
+fBodyGyroMeanX
+fBodyGyroMeanY
+fBodyGyroMeanZ
+fBodyGyroStdX
+fBodyGyroStdY
+fBodyGyroStdZ
+fBodyGyroMeanFreqX
+fBodyGyroMeanFreqY
+fBodyGyroMeanFreqZ
+fBodyAccMagMean
+fBodyAccMagStd
+fBodyAccMagMeanFreq
+fBodyBodyAccJerkMagMean
+fBodyBodyAccJerkMagStd
+fBodyBodyAccJerkMagMeanFreq
+fBodyBodyGyroMagMean
+fBodyBodyGyroMagStd
+fBodyBodyGyroMagMeanFreq
+fBodyBodyGyroJerkMagMean
+fBodyBodyGyroJerkMagStd
+fBodyBodyGyroJerkMagMeanFreq
 
-features.txt: Names of the 561 features.
 
-activity_labels.txt: Names and IDs for each of the 6 activities.
+Activity Labels
 
-X_train.txt: 7352 observations of the 561 features, for 21 of the 30 volunteers.
-
-subject_train.txt: A vector of 7352 integers, denoting the ID of the volunteer related to each of the observations in X_train.txt.
-
-y_train.txt: A vector of 7352 integers, denoting the ID of the activity related to each of the observations in X_train.txt.
-
-X_test.txt: 2947 observations of the 561 features, for 9 of the 30 volunteers.
-
-subject_test.txt: A vector of 2947 integers, denoting the ID of the volunteer related to each of the observations in X_test.txt.
-
-y_test.txt: A vector of 2947 integers, denoting the ID of the activity related to each of the observations in X_test.txt.
-
-More information about the files is available in README.txt. More information about the features is available in features_info.txt.
-
-Data files that were not used
-
-This analysis was performed using only the files above, and did not use the raw signal data. Therefore, the data files in the "Inertial Signals" folders were ignored.
-
-Processing steps
+WALKING (value 1): subject was walking during the test
+WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
+WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
+SITTING (value 4): subject was sitting during the test
+STANDING (value 5): subject was standing during the test
+LAYING (value 6): subject was laying down during the test
